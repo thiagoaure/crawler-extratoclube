@@ -1,7 +1,7 @@
 
 # Crawler
 
-Uma breve aplicação desenvolvida em .NET 6 que  recebe um json contendo um numero de cpf e credenciais de login do portal [ExtratoClube](http://extratoclube.com.br/), processa o cpf e verifica se há um número de benefiíco cadastrado para o documento. Esse processamento tem o seguinte fluxo: Recebe o json com as informações, retorna uma resposta informando que era ser processado, coloca o cpf em uma fila e verifica quais dados estão vinculados aquele cpf, salvando essas informações em cache e indexando no Elasticsearch. Depois é possiível verficar no endpoint de consulta.
+Uma breve aplicação desenvolvida em .NET 6 que  recebe um json contendo um numero de cpf e credenciais de login do portal [ExtratoClube](http://extratoclube.com.br/), processa o cpf e verifica se há um número de benefiíco cadastrado para o documento. Esse processamento tem o seguinte fluxo: Recebe o json com as informações, retorna uma resposta informando que será processado, coloca o cpf em uma fila e verifica quais dados estão vinculados aquele cpf, salvando essas informações em cache e indexando no Elasticsearch. Depois é possiível verficar no endpoint de consulta.
 
 
 
@@ -43,6 +43,11 @@ npm install
 npm start
 ```
 ## Referência
+
+[Crawler](https://renatogroffe.medium.com/net-core-2-0-selenium-mongodb-extraindo-dados-de-p%C3%A1ginas-web-8fa674239197)
+[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/introduction.html)
+[Redis](https://macoratti.net/21/04/aspc_cacheredis1.htm)
+[RabitMq](https://renatogroffe.medium.com/net-5-rabbitmq-exemplos-de-implementa%C3%A7%C3%A3o-1366663b8519)
 
 
 
